@@ -15,25 +15,50 @@ startRecording()
  Remember, once BoogieBot gets to the end of the routine it will stop. You can use Editor > Execute Playground to see the moves again. Have fun!
 */
 // If you're going to send it, sign it.
-setBotTitle("The next dance craze")
-setBotSubtitle("You saw it here first!")
+setBotTitle("Funky Robot Disco Jive")
+setBotSubtitle("by Josh McDonald")
 // Start the dance!
 fabulize()
-leftArmUp()
 rightArmUp()
-
-leftLegUp()
-rightLegUp()
-leftLegDown()
-rightLegDown()
-shakeItLeft()
+rightArmDown()
 shakeItRight()
 shakeItCenter()
+rightArmUp()
+rightArmDown()
+shakeItLeft()
+shakeItCenter()
+rightArmUp()
+rightArmDown()
+shakeItRight()
+shakeItCenter()
+
+leftArmUp()
+rightLegUp()
+shakeItCenter()
+leftArmDown()
+rightLegDown()
+
+rightArmUp()
+leftLegUp()
+shakeItLeft()
+shakeItCenter()
+rightArmDown()
+leftLegDown()
+
 jumpUp()
 jumpDown()
 
-leftArmDown()
+rightArmUp()
+leftArmUp()
+jumpUp()
+jumpDown()
 rightArmDown()
+leftArmDown()
+
+shakeItRight()
+shakeItLeft()
+shakeItCenter()
+
 defabulize()
 
 //: Next, find out a new term for the work you’ve been doing. 

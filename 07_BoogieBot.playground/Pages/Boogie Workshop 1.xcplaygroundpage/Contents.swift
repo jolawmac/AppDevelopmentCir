@@ -20,8 +20,25 @@ startBot()
 startRecording()
 
 
+fabulize()
+shakeItRight()
+shakeItLeft()
+shakeItCenter()
 
+leftArmUp()
+leftArmDown()
+rightArmUp()
+rightArmDown()
 
+leftLegUp()
+leftLegDown()
+rightLegUp()
+rightLegDown()
+
+jumpUp()
+jumpDown()
+
+defabulize()
 
 
 

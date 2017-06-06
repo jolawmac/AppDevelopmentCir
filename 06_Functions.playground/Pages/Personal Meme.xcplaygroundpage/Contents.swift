@@ -7,6 +7,33 @@
 */
 
 
+func name() {
+    let firstName = "Josh"
+    let lastname = "McDonald"
+    print(firstName + " " + lastname)
+}
+
+func greeting() {
+    print("Hello, my name is...")
+}
+
+func age() {
+    let currentYear = 2017
+    let birthYear = 1983
+    let age = currentYear - birthYear
+    print(age)
+}
+
+func personsAge() {
+    print("and I am ")
+    age()
+}
+
+
+greeting()
+name()
+personsAge()
+
 
 
 

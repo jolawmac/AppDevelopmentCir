@@ -10,6 +10,10 @@ func doTheDisco() {
     shakeItRight()
     leftArmDown()
     shakeItCenter()
+    rightArmUp()
+    shakeItLeft()
+    rightArmDown()
+    shakeItCenter()
 }
 /*:
  Once you've decided what moves go in the routine, start the robot dancing by calling the function you just made:

@@ -14,7 +14,13 @@
  
  _Hint:_ Do all of your calculations in megabytes.
  */
+let phoneMemory = 8000
+let memoryUsed = 3000
+let availableMemory = phoneMemory - memoryUsed
+let oneMinuteOfVideo = 150
+let videoMinutes = availableMemory / oneMinuteOfVideo
 
+let userString = "you can record \(videoMinutes) more minutes of video."
 
 
 

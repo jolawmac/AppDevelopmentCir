@@ -10,6 +10,11 @@ breatheBetweenVerses()
 verseTwo()
 breatheBetweenVerses()
 verseThree()
+breatheBetweenVerses()
+verseTwo()
+verseThree()
+breatheBetweenVerses()
+verseOne()
 /*: 
  - experiment: Move the lines around to sing the verses in a different order or copy lines to repeat a verse.
 

@@ -18,7 +18,7 @@ func rowTheBoat() {
  
  To actually run the code, you have to _call_ the function. Typing the name of the function will call the function. Uncomment the line below:
 */
-// rowTheBoat()
+rowTheBoat()
 /*:
  When you've called a function in a playground, you'll see results appear in the sidebar. Calling the `rowTheBoat` function will print text in the console area below, too.
 
@@ -27,11 +27,15 @@ func rowTheBoat() {
 
 */
 
+func addingItUp() {
+    
+    let addition = 1 + 2
+    print(addition)
+}
 
+addingItUp()
 
-
-
-
+addingItUp()
 
 //: Next, learn about how to think about tasks and divide them up in a way that makes sense.
 //:

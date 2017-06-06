@@ -36,7 +36,7 @@ After:\
 authorName
 "authorName"
 "Did you know that \(bookTitle) was written by \(authorName)?"
-
+print("Did you know that \(bookTitle) was written by \(authorName)?")
 //:Next, find out a common use for the console. 
 //:
 //: [Previous](@previous)  |  page 7 of 11  |  [Next: Logging](@next)

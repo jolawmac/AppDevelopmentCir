@@ -29,12 +29,15 @@ breatheBetweenVerses()
 rowTheBoat()
 //: - callout(Exercise): Write a function called `crocodileScream()` for the second two lines of the second verse, and call it to complete the song in the console.
 
+func crocodileScream() {
+    print("If you see a crocodile")
+    print("Don't forget to scream")
+}
 
 
+crocodileScream()
 
-
-
-
+breatheBetweenVerses()  
 
 
 

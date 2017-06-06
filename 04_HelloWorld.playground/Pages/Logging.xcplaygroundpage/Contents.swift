@@ -13,7 +13,7 @@
 
 addToScore(1)
 addToScore(2)
-addToScore(1)
+addToScore(3)
 
 /*:
  Once you’ve maximized your points, go ahead and hide the results sidebar. You’re going retro again.

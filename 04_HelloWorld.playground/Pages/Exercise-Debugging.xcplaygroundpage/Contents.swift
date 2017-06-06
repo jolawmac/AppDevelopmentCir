@@ -16,14 +16,14 @@
 // -------------- 👇 The code that needs fixing is below this line 👇 --------------------
 
 
-let questionWord = "WHY"
-let connectorWord = "but"
-let question = "\(connectorWord) \\(questionWord)?"
+let questionWord = "why would you do that"
+let connectorWord = "How and"
+let question = "\(connectorWord) \(questionWord)?"
+let statement = "I just don't understand why!"
+let incessantQuestion = "\(question) \(statement)"
 
-let incessantQuestion = "\(question)\(question)\(question)\(question)"
-
-let name = "Kim"
-let summons = "\(name) \(name). \(name)!"
+let name = "Josh"
+let summons = "\(name)! "
 
 let botheration = "\(summons)\(incessantQuestion)"
 
@@ -31,10 +31,12 @@ let botheration = "\(summons)\(incessantQuestion)"
 // -------------- 👆 The code that needs fixing is above this line 👆 --------------------
 //: Sadly, this program has a bug. Follow the directions to find and fix the error!
 // -------------- 👇 Add your print statements below this line 👇 --------------------
-
-
-
-
+print(botheration)
+//print(question)
+//print(questionWord)
+//print(connectorWord)
+//print(incessantQuestion)
+//print(summons)
 /*:
 
  1. Print out the `botheration` constant like this:

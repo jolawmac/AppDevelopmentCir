@@ -9,13 +9,19 @@
  
  Write out the song or meme using `print` statements, then look for patterns and repetition and choose groups of lines to combine into functions. This is a free-form exercise, so you can do whatever you like.
 */
+func name() {
+    let firstName = "Josh"
+    let lastname = "McDonald"
+    print(firstName + " " + lastname)
+}
+
+func greeting() {
+    print("Hello, my name is...")
+}
 
 
-
-
-
-
-
+greeting()
+name()
 
 
 
