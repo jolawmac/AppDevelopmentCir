@@ -20,7 +20,13 @@
  \
  After each round, `print` some statements that your opponents might make. If you can, use the value of your current score in their statements.
  */
+var startOverallScore = 501
+var roundScore = 0
 
+var eachThrow = 25
+var totalScore = roundScore + eachThrow
+var endScore = startOverallScore - totalScore
+print("Haha you little bums, I will win! I keep scoring \(eachThrow) each round suckas!")
 
 
 /*:
