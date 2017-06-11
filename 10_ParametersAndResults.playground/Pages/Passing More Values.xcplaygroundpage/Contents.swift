@@ -6,6 +6,8 @@
 func hello(firstName: String, lastName: String) {
     print("Hello \(firstName) \(lastName)")
 }
+
+hello(firstName: "Josh", lastName: "McDonald")
 /*:
  It can take some practice to read these parameter lists smoothly. Remember that each parameter is a pair of one name and one type and that the commas separate each parameter. You might even picture this parameter list as:
  

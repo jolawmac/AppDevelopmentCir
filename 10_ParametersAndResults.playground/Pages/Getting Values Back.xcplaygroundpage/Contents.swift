@@ -29,6 +29,12 @@ let videoMessage = spaceAvailableMessage(eachVideoDuration: desiredVideoDuration
 let namedVideoMessage = "Hey Micah! \(videoMessage)"
 
 
+func names(babyOne: String, babyTwo: String) -> String {
+    
+    return ("My kids names are \(babyOne) and \(babyTwo)")
+}
+
+names(babyOne: "Jonah", babyTwo: "Weston")
 //: Try making your own function that returns a value.
 //:
 //: [Previous](@previous)  |  page 6 of 17  |  [Next: Giving Values Back](@next)

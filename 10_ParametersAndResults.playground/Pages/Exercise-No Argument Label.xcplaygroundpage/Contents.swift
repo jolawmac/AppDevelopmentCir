@@ -5,12 +5,12 @@
  
  The function below has an unnecessary argument label when you call it.
 */
-func holler(phrase: String) -> String {
+func holler(_ phrase: String) -> String {
     return "⚡️\(phrase)!!⚡️"
 }
 
-holler(phrase: "Thank you, this is very nice.")
-holler(phrase: "I'm not sure that was necessary.")
+holler("Thank you, this is very nice.")
+holler("I'm not sure that was necessary.")
 /*:
  - callout(Exercise): Update the function definition so it can be called like this:\
  `holler("That's a little surprising!")`
