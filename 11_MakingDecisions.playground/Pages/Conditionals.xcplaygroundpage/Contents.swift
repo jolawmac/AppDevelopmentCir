@@ -10,7 +10,7 @@
  
  The code is similar to how you’d write it in prose:
 */
-let videoLength = 3
+let videoLength = 8
 
 if videoLength < 5 {
     "If I blinked, I'd miss it!"
@@ -18,6 +18,10 @@ if videoLength < 5 {
 
 if videoLength >= 5 {
     "That's lovely."
+}
+
+if videoLength <= 10 {
+    "What the mess?"
 }
 /*:
  

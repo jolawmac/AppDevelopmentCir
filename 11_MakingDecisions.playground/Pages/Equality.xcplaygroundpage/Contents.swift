@@ -11,6 +11,7 @@
  Parts 1 and 3 are values, like the numbers and strings you’ve already been working with. Part 2 is something new: a _comparison operator_. Here’s an example:
 */
 1 == 2
+1 == 1
 /*: 
  The double equal sign `==` checks if the left hand and right hand sides of the statement are equal. In this case they’re not, so the statement is false.
  
@@ -28,6 +29,9 @@ hundred == tenTimesTen
 hundred == nineTimesTen
 //: - Experiment: Try some comparisons of your own. Can you check if two string values are equal?
 
+"Josh" == "Josh"
+"Josh" == "Erica"
+100 == 1 + 45 + 4 + 50
 
 
 
