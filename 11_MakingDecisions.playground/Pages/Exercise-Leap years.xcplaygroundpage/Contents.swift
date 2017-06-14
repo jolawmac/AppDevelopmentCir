@@ -4,20 +4,24 @@
  To decide if a year is a leap year, there are several decisions that have to be made:
  
  - Is the year divisible by 4?
-    - If so, is the year divisible by 100?
-        - If not, it is a leap year.
-        - If so, is the year divisible by 400?
-            - If not, it is **not** a leap year.
-            - If so, it is a leap year.
+ - If so, is the year divisible by 100?
+ - If not, it is a leap year.
+ - If so, is the year divisible by 400?
+ - If not, it is **not** a leap year.
+ - If so, it is a leap year.
  
  These decisions can be made inside a function.
  
  The `number(_:, isDivisibleBy:)` function has been built into this playground to make this exercise easier. Below is an incomplete function for deciding if a given year is a leap year:
-*/
+ */
 func isLeapYear(_ year: Int) -> Bool {
     if number(year, isDivisibleBy: 4) {
-        // Fill in this code...
+        year % 100
         return true
+    } else if number(year, isDivisibleBy: 4) {
+        year % 400
+        return true
+        
     } else {
         return false
     }
