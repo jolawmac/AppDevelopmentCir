@@ -19,15 +19,12 @@ let ceiling: Int = 1002
 let ricketyRope = TreehousePulley(weightCapacity: 200)
 let betterRope = TreehousePulley(weightCapacity: 2000)
 let superHeavyDutyPulley = TreehousePulley(weightCapacity: 10000)
+let betterRopes = TreehousePulley(weightCapacity: 400000)
+
 
 betterRope.canHandleAdditionalLoad(chair)
 ricketyRope.canHandleAdditionalLoad(wood)
 superHeavyDutyPulley.canHandleAdditionalLoad(ceiling)
-
-
-
-
-
 
 
 /*:
