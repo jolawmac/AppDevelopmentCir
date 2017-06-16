@@ -6,8 +6,9 @@
  - callout(Exercise):
  Create three constants for items of different weights that you'd like to bring up to your fort: one less than 100, one between 100 and 1000, and one over 1000.
  */
-
-
+let chair: Int = 98
+let wood: Int = 500
+let ceiling: Int = 1002
 
 /*:
  - callout(Exercise):
@@ -16,6 +17,16 @@
  */
 
 let ricketyRope = TreehousePulley(weightCapacity: 200)
+let betterRope = TreehousePulley(weightCapacity: 2000)
+let superHeavyDutyPulley = TreehousePulley(weightCapacity: 10000)
+
+betterRope.canHandleAdditionalLoad(chair)
+ricketyRope.canHandleAdditionalLoad(wood)
+superHeavyDutyPulley.canHandleAdditionalLoad(ceiling)
+
+
+
+
 
 
 

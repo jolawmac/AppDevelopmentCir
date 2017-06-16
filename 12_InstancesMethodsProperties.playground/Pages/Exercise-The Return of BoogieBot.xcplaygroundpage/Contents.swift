@@ -24,6 +24,7 @@ stage.rightBot = rightBot
  
  Let the dance battle commence:
  */
+
 leftBot.fabulize()
 leftBot.leftArmUp()
 leftBot.leftArmDown()
@@ -35,7 +36,6 @@ rightBot.shakeItLeft()
 rightBot.shakeItCenter()
 rightBot.leftLegUp()
 rightBot.leftLegDown()
-
 
 
 
