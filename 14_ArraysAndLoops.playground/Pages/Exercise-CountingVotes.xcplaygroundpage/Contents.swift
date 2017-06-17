@@ -15,21 +15,44 @@ let shouldHaveMorePollOptionsVotes: [Bool] = [false, false, true, true, false, t
 //:
 //: - note:\
 //: This is also a lot of votes for Swift to use type inference to determine what kind of array it has. The type annotation is written in the array literals above to tell Swift the type of array. This prevents the playground from running slowly.
-
+var yes = 0
+var no = 0
 //: - callout(Exercise): Create two variables, one to count `yes` votes and one to count `no` votes. Each should start off with a value of zero.
 //:
-
+for vote in shouldMascotChangeVotes {
+    if vote == true {
+        yes += 1
+    } else {
+        no += 1
+    }
+}
 //: - callout(Exercise): Create a `for…in` loop that loops over one of the vote collections and checks the value of each vote. If the vote is `true`, the loop should add one vote to the `yes` variable. If it's `false`, it should add one vote to the `no` variable.
-
+if yes > no {
+    print("We have a new mascot!")
+} else {
+    print("We will keep the same mascot")
+}
 
 
 //: - callout(Exercise): After the loop has finished, write an `if` statement that compares the two values and prints a different message based on whether the vote passed or failed.
-
+for vote in shouldInstallCoffeeVendingMachineVotes {
+    if vote == true {
+        yes += 1
+    } else {
+        no += 1
+    }
+}
 
 
 //: - callout(Exercise): Test your code by calling the `for…in` loop on each of the vote collections.\
 //:Which measures won by popular vote?
-
+for vote in shouldHaveMorePollOptionsVotes {
+    if vote == true {
+        yes += 1
+    } else {
+        no += 1
+    }
+}
 
 
 
@@ -45,8 +68,21 @@ let shouldHaveMorePollOptionsVotes: [Bool] = [false, false, true, true, false, t
  `Should we change the mascot? 54 yes, 23 no`
  */
 // Add your vote-processing function here:
+func votingFor(issue: String, arrayOfVotes: [Bool]) {
+    
+    for vote in arrayOfVotes {
+        if vote == true {
+            yes += 1
+        } else {
+            no += 1
+        }
+    }
+    
+   
+    
+}
 
-
+votingFor(issue: "Should we change the mascot?", arrayOfVotes: shouldMascotChangeVotes)
 
 
 

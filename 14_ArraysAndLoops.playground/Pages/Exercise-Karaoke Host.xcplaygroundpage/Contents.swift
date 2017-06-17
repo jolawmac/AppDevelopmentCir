@@ -8,6 +8,11 @@
  - callout(Exercise):
  Create an empty array to hold song titles as strings, and use the `append` method to add three or four songs one at a time.
  */
+var songArray = [String]()
+songArray.append("Justin Beibs")
+songArray += ["311", "106.1", "Salena Gomez"]
+
+//songArray.append(contentsOf: "Kings of Leroy", "Lions of Leroy")
 
 
 
@@ -26,7 +31,9 @@
  Write a `for…in` loop and, for every song title in the array, print an encouraging announcement to let the next singer know that it's their turn.
  */
 
-
+for song in songArray {
+    print("Your next song is.... \(song)")
+}
 
 
 
@@ -35,7 +42,8 @@
  - callout(Exercise):
  After the loop has called everyone up to sing, use the `removeAll` method on the song list to clear out all the past songs.
  */
-
+songArray.removeAll()
+songArray
 
 
 
