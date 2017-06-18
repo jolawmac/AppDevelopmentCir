@@ -71,8 +71,6 @@ for vote in shouldHaveMorePollOptionsVotes {
 
 func printResults(forIssue: String, withVotes: [Bool]) {
     
-    var forIssueL: String
-    
     for vote in withVotes {
         if vote == true {
             yes += 1
