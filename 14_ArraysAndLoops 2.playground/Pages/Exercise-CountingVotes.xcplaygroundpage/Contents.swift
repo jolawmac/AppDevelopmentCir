@@ -19,29 +19,29 @@ var yes = 0
 var no = 0
 //: - callout(Exercise): Create two variables, one to count `yes` votes and one to count `no` votes. Each should start off with a value of zero.
 //:
-//for vote in shouldMascotChangeVotes {
-//    if vote == true {
-//        yes += 1
-//    } else {
-//        no += 1
-//    }
-//}
-////: - callout(Exercise): Create a `for…in` loop that loops over one of the vote collections and checks the value of each vote. If the vote is `true`, the loop should add one vote to the `yes` variable. If it's `false`, it should add one vote to the `no` variable.
-//if yes > no {
-//    print("We have a new mascot!")
-//} else {
-//    print("We will keep the same mascot")
-//}
+for vote in shouldMascotChangeVotes {
+    if vote == true {
+        yes += 1
+    } else {
+        no += 1
+    }
+}
+//: - callout(Exercise): Create a `for…in` loop that loops over one of the vote collections and checks the value of each vote. If the vote is `true`, the loop should add one vote to the `yes` variable. If it's `false`, it should add one vote to the `no` variable.
+if yes > no {
+    print("We have a new mascot!")
+} else {
+    print("We will keep the same mascot")
+}
 
 
 //: - callout(Exercise): After the loop has finished, write an `if` statement that compares the two values and prints a different message based on whether the vote passed or failed.
-//for vote in shouldInstallCoffeeVendingMachineVotes {
-//    if vote == true {
-//        yes += 1
-//    } else {
-//        no += 1
-//    }
-//}
+for vote in shouldInstallCoffeeVendingMachineVotes {
+    if vote == true {
+        yes += 1
+    } else {
+        no += 1
+    }
+}
 
 
 //: - callout(Exercise): Test your code by calling the `for…in` loop on each of the vote collections.\
@@ -68,25 +68,21 @@ for vote in shouldHaveMorePollOptionsVotes {
  `Should we change the mascot? 54 yes, 23 no`
  */
 // Add your vote-processing function here:
-
-func printResults(forIssue: String, withVotes: [Bool]) {
+func votingFor(issue: String, arrayOfVotes: [Bool]) {
     
-    var forIssueL: String
-    
-    for vote in withVotes {
+    for vote in arrayOfVotes {
         if vote == true {
             yes += 1
-        } else if vote == false {
+        } else {
             no += 1
         }
     }
     
-    print("\(forIssue) \(yes) yes, \(no) no")
+   
     
 }
 
-printResults(forIssue: "Should we change the mascot?", withVotes: shouldMascotChangeVotes)
-
+votingFor(issue: "Should we change the mascot?", arrayOfVotes: shouldMascotChangeVotes)
 
 
 
