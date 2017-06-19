@@ -7,16 +7,21 @@ Think of a goal of yours that can be measured in progress every day, whether itâ
 */
 var hoursCoding: [Int] = [1, 4, 4, 3, 5, 6, 1, 2, 3, 4, 6, 7, 1, 1, 2, 8, 10, 3, 3, 4]
 //: - callout(Exercise): Write a function that takes the daily number as an argument and returns a message as a string. It should return a different message based on how close the number comes to your goal. You can be as ambitious and creative as you'd like with your responses, but make sure to return at least two different messages depending on your daily progress!
-func timeSpent(hoursCoding: [Int]) -> String  {
+func timeSpent(_ dailyNumber: [Int]) -> String  {
     
-    for hour in hoursCoding {
+    for hour in dailyNumber {
+        
         if hour <= 3 {
-            return("Work more!")
+            print("Work more!")
         } else if hour >= 5 {
-            return("Great job!")
+            print("Great job!")
         }
     }
+    
+    return dailyNumber
 }
+
+
 
 
 //: - callout(Exercise): Write a `forâ€¦in` loop that loops over your sample data, calls your function to get an appropriate message for each item, and prints the message to the console.
