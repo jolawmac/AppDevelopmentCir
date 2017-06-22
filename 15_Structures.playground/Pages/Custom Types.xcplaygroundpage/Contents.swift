@@ -24,9 +24,9 @@ struct Song {
 let song = Song(title: "No, no, no", artist: "Fizz", duration: 150)
 //: Remember from the Instances lesson that every type has at least one initializer. When you declare a struct, an initializer is automatically created for you. Because this initializer has a parameter for each member property in the struct, it is called a _memberwise initializer_.
 //: - experiment: Try creating a new `Song`. Notice that the autocompletion pop-up menu will include the memberwise initializer.
+let song2 = Song(title: "Thriller", artist: "Michael Jackson", duration: 200)
 
-
-
+let newSong = Song(title: "Your mom", artist: "Me", duration: 300)
 
 
 //: Next, learn more about the properties of a struct.
