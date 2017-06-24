@@ -6,7 +6,7 @@
  Think of another real-world object and its properties. Make up some actions or behaviors that the object might be able to perform. Write them all in plain English first in a comment:
  */
  // Add your English-language description of the type here. Make sure to add // before each line of your comment description.
- //
+ // A pastor: Church name, name, mileage, reciepts,
  //
  //
 
@@ -16,7 +16,14 @@
  *Hint: If you made any properties with custom types, you can create placeholder types that have empty implementations. (See the TrainingShoe code at the bottom of this page for an example.) The placeholder type below will make sure your playground can run without errors.*
  */
 // Add your own struct here:
-
+struct Pastor {
+    
+    var churchName: String
+    let name: String
+    var mileage: Int
+    var reciepts: Double
+    
+}
 
 
 
@@ -27,7 +34,7 @@
  Use the struct you created to make a new instance of your type.
 
  */
-
+let pastor1 = Pastor(churchName: "Richmond Road Baptist Church", name: "Josh McDonald", mileage: 260, reciepts: 453.98)
 
 /*:
  - note: Here's an example of a placeholder type used for making a TrainingShoe:
@@ -44,10 +51,14 @@ struct TrainingShoe {
 
     func squeak() {
         // Make a loud noise like rubber squealing on a gym floor
+        print("Squeak!")
     }
 
     func warnAboutLaces() {
         // If laces are untied, print a reminder to tie them
+        if isTied == false {
+            print("Don't forget to tie your shoe!")
+        }
     }
 }
 
@@ -56,6 +67,7 @@ let newLaces = Shoelaces()
 
 // Use the instance of the placeholder type to create an instance of your new type
 let newShoe = TrainingShoe(size: 39, isTied: true, laces: newLaces)
+newShoe.warnAboutLaces()
 
 
 

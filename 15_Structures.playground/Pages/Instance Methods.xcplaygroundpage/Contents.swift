@@ -9,7 +9,7 @@ struct Rectangle {
     let width: Int
     let height: Int
     var area: Int {
-       //width * height
+       let area = width * height
         return area
     }
     
@@ -23,8 +23,8 @@ struct Rectangle {
 //: Notice that within the body of the method definition, you can access the values of `height` and `width` of the struct without using a dot. The instance method is written as part of the struct definition, and so it can directly access the properties within the instance.
 //:
 //: Just like the methods on built-in types, the methods you define are called using the instance name, then a dot, then the name and arguments of the method:
-let rectangle = Rectangle(width: 10, height: 10)
-let otherRectangle = Rectangle(width: 10, height: 20)
+//let rectangle = Rectangle(width: 10, height: 10)
+//let otherRectangle = Rectangle(width: 10, height: 20)
 
 //rectangle.biggerThan(otherRectangle)
 //otherRectangle.biggerThan(rectangle)
@@ -36,6 +36,10 @@ let otherRectangle = Rectangle(width: 10, height: 20)
 
 //rectangle.biggerThan(rectangle)
 //otherRectangle.biggerThan(otherRectangle)
+let rectangle = Rectangle(width: 10, height: 10)
+let otherRect = Rectangle(width: 10, height: 20)
+rectangle.biggerThan(otherRect)
+rectangle.biggerThan(rectangle)
 
 
 //: Next, a summary of what you’ve learned.
