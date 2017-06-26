@@ -42,6 +42,7 @@ enum Suit {
         case .hearts: return 3
         case .diamonds: return 2
         case .clubs: return 1
+        // case .emoji: return "♠️"
         }
     }
     
