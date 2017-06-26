@@ -13,8 +13,10 @@ func cookLunch(choice: String) -> String {
     }
 }
 cookLunch(choice: "pasta")
+cookLunch(choice: "burger")
 //: - experiment: Ask for some different choices by calling `cookLunch(choice:)` a number of times. Ask for anything you can think of. What result do you get back?
-
+cookLunch(choice: "hotdog")
+cookLunch(choice: "Pasta")
 
 
 

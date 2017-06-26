@@ -4,10 +4,10 @@
  On the previous page you used a default case to match three of the values in this enum:
 */
 enum Quality {
-    case bad, poor, acceptable, good, great
+    case bad, poor, acceptable, good, great, terrible
 }
 
-let quality = Quality.good
+let quality = Quality.terrible
 /*:
  But a default case might cause you problems later on if you add new cases to the enum. The switch statement will use the default case for your new value, which may not be what you wanted. 
  
@@ -20,6 +20,8 @@ case .poor:
     print("That's not good enough")
 case .acceptable, .good, .great:
     print("OK, I'll take it")
+case .terrible:
+    print("You're terrible")
 }
 /*:
  - callout(Exercise): Add a new case, `terrible`, to the enum. 

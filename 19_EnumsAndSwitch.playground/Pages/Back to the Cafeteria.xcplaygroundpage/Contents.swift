@@ -4,7 +4,7 @@
  Switch statements are very useful when writing functions that take enum arguments. Because switch statements must be exhaustive, you can be sure you’re dealing with all input possibilities. Here's the `cookLunch` function you've been working with, rewritten using a switch statement:
 */
 enum LunchChoice {
-    case pasta, burger, soup
+    case pasta, burger, soup, other
 }
 
 func cookLunch(_ choice: LunchChoice) -> String {
@@ -15,10 +15,13 @@ func cookLunch(_ choice: LunchChoice) -> String {
         return "🍔"
     case .soup:
         return "🍲"
+    default:
+        return "🍫"
     }
 }
 
 cookLunch(.burger)
+cookLunch(.other)
 /*: 
  The rewritten function is much better than the earlier version, which used strings and if statements.
  

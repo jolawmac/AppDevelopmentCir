@@ -6,19 +6,26 @@
  For example, switch statements can work with strings and numbers. Since it’s impossible to have an exhaustive list of all string and number values, switch statements using these types require a default case.
  */
 let animal = "cat"
+let animal2 = "cow"
+let animal3 = "rino"
+let animal4 = "bird"
 
 func soundFor(animal: String) -> String {
     switch animal {
         case "cat":
             return "Meow!"
-        case "dog":
-            return "Woof!"
-        case "cow":
-            return "Moo!"
-        case "chicken":
-            return "Cluck!"
-        default:
-            return "I don't know that animal!"
+    case "dog":
+        return "Woof!"
+    case "cow":
+        return "Moo!"
+    case "chicken":
+        return "Cluck!"
+    case "rino":
+        return "Argh!"
+    case "bird":
+        return "Chirp, Chirp!"
+    default:
+        return "I don't know that animal!"
     }
 }
 soundFor(animal: animal)
@@ -29,7 +36,9 @@ soundFor(animal: animal)
 Add a few more animal cases to the switch statement and call the function to test the new cases.
  */
 
-
+soundFor(animal: animal2)
+soundFor(animal: animal3)
+soundFor(animal: animal4)
 
 
 

@@ -4,16 +4,24 @@
  This enum is used to represent how good something is:
 */
 enum Quality {
-    case bad, poor, acceptable, good, great
+    case holycowyousuck, bad, poor, acceptable, good, great, stunning, wowzers
 }
 
-let quality = Quality.good
+let quality = Quality.wowzers
 //: The switch statement is a little different to the ones you’ve seen up to now:
 switch quality {
 case .bad:
     print("That really won't do")
+case .holycowyousuck:
+    print("You just flat out suck you dumb idiot")
 case .poor:
     print("That's not good enough")
+case .good:
+    print("Getting much better")
+case .acceptable:
+    print("Ok now we're between poor and good")
+case .wowzers:
+    print("You are so amazing that I'm blow away by your amazingness")
 default:
     print("OK, I'll take it")
 }
