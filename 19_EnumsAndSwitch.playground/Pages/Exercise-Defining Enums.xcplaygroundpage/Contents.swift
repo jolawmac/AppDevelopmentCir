@@ -5,19 +5,25 @@
  
  - callout(Exercise): Define an enum for the compass directions: North, East, South, and West.
 */
-
+enum Directions {
+    case north, south, east, west
+}
 
 
 
 
 //: - callout(Exercise): Define an enum for jigsaw puzzle pieces: corner, edge, and middle.
-
+enum JigsawPuzzlePieces {
+    case corner, edge, middle
+}
 
 
 
 //: - callout(Excercise): Define an enum for the playback modes in a music app: standard, repeat, repeat all, and shuffle.
- 
- 
+enum playbackModes {
+    case standard, repeatAll, shuffle 
+}
+
  
 
 
