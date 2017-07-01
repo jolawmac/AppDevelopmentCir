@@ -7,13 +7,27 @@
 struct Enemy {
     let strength: Int
     let speed: Int
-    let weapon: Bool
+    let weapon = Weapon.rubberMallet
 }
-/*: 
+
+enum Weapon {
+    case none, sword, rubberMallet
+    
+    var weapons: Bool {
+        switch self {
+        case .none: return false
+        case .sword: return true
+        case .rubberMallet: return true
+        }
+    }
+}
+
+
+/*:
  As your game has developed, you’ve decided that your enemies might have more than one type of weapon.
  
  - callout(Exercise): Define an enum to represent the weapons an enemy might have: `none`, `sword`, `rubberMallet` and so on. Change the struct definition to use your new enum instead of a `Bool`.
  
-
-[Previous](@previous)  |  page 19 of 21  |  [Next: Exercise: Counting Votes](@next)
-*/
+ 
+ [Previous](@previous)  |  page 19 of 21  |  [Next: Exercise: Counting Votes](@next)
+ */
