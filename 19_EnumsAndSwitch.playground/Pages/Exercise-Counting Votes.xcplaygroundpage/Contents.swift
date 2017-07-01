@@ -16,13 +16,17 @@ let tripDestinationVotes: [ClassTripDestination] = [.beach, .chocolateFactory, .
  - callout(Exercise):
  Without counting the votes by hand, find out whether the students prefer the chocolate factory or the beach. *Hint: Check the Arrays and Loops playground for a refresher on working with collections of data.*
  */
-for vote in tripDestinationVotes {
-    if vote == .beach {
-        print("\(vote)'s for a beach trip")
-    } else {
-        print("\(vote)'s for a chocolate factory trip")
-    }
-}
+//var vote1 = ClassTripDestination.beach
+//var vote2 = ClassTripDestination.chocolateFactory
+//
+//for vote in tripDestinationVotes {
+//    if vote == true {
+//        vote1 += 1
+//    } else if vote == false {
+//        vote2 += 1
+//    }
+//    print("The votes are in and here is the tally: \(vote1) votes for the beach and \(vote2) votes for the chocolate factory!")
+//}
 
 
 /*:
