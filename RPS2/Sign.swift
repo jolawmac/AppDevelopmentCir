@@ -35,6 +35,13 @@ enum Sign {
         case .scissors: return "✌🏼"
         }
     }
+    
+//    var statusLabel: String {
+//        switch self {
+//            
+//        }
+//        
+//    }
 }
 
 
