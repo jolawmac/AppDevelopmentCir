@@ -14,11 +14,8 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        
-    }
+    
+    //func
     
     // MARK: - Outlets
     
