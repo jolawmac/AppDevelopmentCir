@@ -1,12 +1,16 @@
+//
+//  ViewController.swift
+//  MemeMaker2
+//
+//  Created by Josh & Erica on 7/10/17.
+//  Copyright © 2017 Josh McDonald. All rights reserved.
+//
+
 import UIKit
 
 class ViewController: UIViewController {
     
-    @IBOutlet weak var topCaptionSegmentedControl: UISegmentedControl!
-    @IBOutlet weak var bottomCaptionSegmentedControl: UISegmentedControl!
-    
-    @IBOutlet weak var topCaptionLabel: UILabel!
-    @IBOutlet weak var bottomCaptionLabel: UILabel!
+    // MARK: - Properties 
     
     let topChoices = [
         CaptionOption(emoji: "🕶", caption: "You know what's cool?"),
@@ -20,30 +24,33 @@ class ViewController: UIViewController {
         CaptionOption(emoji: "🐒", caption: "Monkeys being funky")
     ]
     
+    
+    
+    // MARK: - Functions
+
     override func viewDidLoad() {
         super.viewDidLoad()
+    
         
         topCaptionSegmentedControl.removeAllSegments()
         for choice in topChoices {
             topCaptionSegmentedControl.insertSegment(withTitle: choice.emoji,
-                                             at: topChoices.count,
-                                             animated: false)
+                                                     at: topChoices.count,
+                                                     animated: false)
         }
         topCaptionSegmentedControl.selectedSegmentIndex = 0
         
         bottomCaptionSegmentedControl.removeAllSegments()
         for bottomChoice in bottomChoices {
             bottomCaptionSegmentedControl.insertSegment(withTitle: bottomChoice.emoji,
-                                                at: bottomChoices.count,
-                                                animated: false)
+                                                        at: bottomChoices.count,
+                                                        animated: false)
         }
         bottomCaptionSegmentedControl.selectedSegmentIndex = 0
         
         updateLabels()
-    }
-    
-    @IBAction func didChangeSelectedValue(_ sender: AnyObject) {
-        updateLabels()
+        
+        
     }
     
     func updateLabels() {
@@ -54,4 +61,20 @@ class ViewController: UIViewController {
         bottomCaptionLabel.text = bottomChoices[bottomSelectedIndex].caption
     }
     
+    
+    
+
+    // MARK: - Outlets
+    @IBOutlet weak var topCaptionSegmentedControl: UISegmentedControl!
+    @IBOutlet weak var bottomCaptionSegmentedControl: UISegmentedControl!
+    @IBOutlet weak var topCaptionLabel: UILabel!
+    @IBOutlet weak var bottomCaptionLabel: UILabel!
+    
+    // MARK: - Actions
+    
+    @IBAction func segmentedControlTapped(_ sender: Any) {
+        updateLabels()
+    }
+    
 }
+

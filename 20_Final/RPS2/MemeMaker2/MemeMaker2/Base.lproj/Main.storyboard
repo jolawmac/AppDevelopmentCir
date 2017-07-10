@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16B2657" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MemeMaker2" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="oau-gN-fh2">
+                                <rect key="frame" x="68" y="103" width="240" height="457"/>
+                                <subviews>
+                                    <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="bJc-Z0-PwN">
+                                        <rect key="frame" x="60" y="0.0" width="120" height="24"/>
+                                        <segments>
+                                            <segment title="First"/>
+                                            <segment title="Second"/>
+                                        </segments>
+                                        <connections>
+                                            <action selector="segmentedControlTapped:" destination="BYZ-38-t0r" eventType="valueChanged" id="dGG-6K-yUL"/>
+                                        </connections>
+                                    </segmentedControl>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SrJ-xO-Cj5">
+                                        <rect key="frame" x="74" y="53" width="92" height="21"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="21" id="V61-Zv-fCG"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="telgezer" translatesAutoresizingMaskIntoConstraints="NO" id="FjP-H4-LPY">
+                                        <rect key="frame" x="0.0" y="104" width="240" height="250"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZkH-Ev-Y31">
+                                        <rect key="frame" x="60" y="384" width="120" height="21"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="21" id="rDw-rj-qZC"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="4FX-Gt-aZd">
+                                        <rect key="frame" x="60" y="435" width="120" height="23"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="22" id="gsL-ii-hRz"/>
+                                        </constraints>
+                                        <segments>
+                                            <segment title="First"/>
+                                            <segment title="Second"/>
+                                        </segments>
+                                        <connections>
+                                            <action selector="segmentedControlTapped:" destination="BYZ-38-t0r" eventType="valueChanged" id="hNa-MT-sK1"/>
+                                        </connections>
+                                    </segmentedControl>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="bJc-Z0-PwN" firstAttribute="leading" secondItem="ZkH-Ev-Y31" secondAttribute="leading" id="C18-DT-MkC"/>
+                                    <constraint firstItem="FjP-H4-LPY" firstAttribute="centerY" secondItem="oau-gN-fh2" secondAttribute="centerY" id="NzS-Q9-K3C"/>
+                                    <constraint firstItem="ZkH-Ev-Y31" firstAttribute="leading" secondItem="4FX-Gt-aZd" secondAttribute="leading" id="ZwT-g9-V6l"/>
+                                    <constraint firstItem="bJc-Z0-PwN" firstAttribute="leading" secondItem="oau-gN-fh2" secondAttribute="leading" constant="60" id="kvf-CL-n7Y"/>
+                                    <constraint firstItem="SrJ-xO-Cj5" firstAttribute="leading" secondItem="oau-gN-fh2" secondAttribute="leading" constant="74" id="oy5-SS-eQM"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="oau-gN-fh2" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="52" id="FFy-8o-8dh"/>
+                            <constraint firstItem="oau-gN-fh2" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="83" id="JVZ-rv-Go1"/>
+                            <constraint firstItem="oau-gN-fh2" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="RHC-bj-q51"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="oau-gN-fh2" secondAttribute="bottom" constant="107" id="hjI-g8-NtY"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="bottomCaptionLabel" destination="ZkH-Ev-Y31" id="2yh-81-8PY"/>
+                        <outlet property="bottomCaptionSegmentedControl" destination="4FX-Gt-aZd" id="h8A-nN-79M"/>
+                        <outlet property="topCaptionLabel" destination="SrJ-xO-Cj5" id="pZJ-e6-GTk"/>
+                        <outlet property="topCaptionSegmentedControl" destination="bJc-Z0-PwN" id="yoP-R7-89K"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="138.98050974512745"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="telgezer" width="1600" height="1063"/>
+    </resources>
+</document>
